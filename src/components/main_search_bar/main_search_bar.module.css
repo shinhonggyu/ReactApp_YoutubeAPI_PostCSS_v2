@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Questrial', 'Noto Sans KR', 'sans-serif';
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > .img {
+  width: 80px;
+}
+
+.titleWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.slogan {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.searchWrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 35px;
+  margin-top: 3em;
+  border: 3px solid #4e86f77c;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.input {
+  flex-basis: 75%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  outline: 0;
+  border: 0;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+}
+
+.button {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  right: 0;
+  width: 64px;
+  cursor: pointer;
+  padding: 0;
+  pointer-events: none;
+}
+
+.buttonImg {
+  width: 40px;
+  height: 100%;
+  padding: 0.2em;
+}
+
+.searchWrap.focus {
+  width: 400px;
+  cursor: auto;
+  margin-top: 2rem;
+}
+
+.searchWrap.focus > .input {
+  display: block;
+  margin-left: 2rem;
+  cursor: auto;
+}
+
+.searchWrap.focus > .button {
+  pointer-events: auto;
+}
