@@ -38,15 +38,10 @@ const MainSearchBar = () => {
           onFocus={searchFocusOn}
           onBlur={searchFocusOut}
           onKeyPress={onKeyPress}
-          onMouseEnter={() => console.log('hi')}
           type="search"
           placeholder=""
         />
-        <button
-          className={styles.button}
-          onClick={() => console.log('hi')}
-          type="submit"
-        >
+        <button className={styles.button} type="submit">
           <img
             className={styles.buttonImg}
             src="./images/icon-search-blue.png"

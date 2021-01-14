@@ -85,7 +85,7 @@
 .searchWrap.focus {
   width: 400px;
   cursor: auto;
-  margin-top: 2rem;
+  margin-top: 3em;
 }
 
 .searchWrap.focus > .input {

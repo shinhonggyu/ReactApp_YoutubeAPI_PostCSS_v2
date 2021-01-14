@@ -1,13 +1,13 @@
 import React from 'react';
 import MainSearchBar from './components/main_search_bar/main_search_bar';
-import MainVideoList from './components/main_video_list/main_video_list';
 import styles from './main.module.css';
+import Row from './Row';
 
-const Main = ({ videos }) => {
+const Main = () => {
   return (
     <div className={styles.main}>
       <MainSearchBar />
-      <MainVideoList videos={videos} />
+      <Row title="Youtube Top25" />
     </div>
   );
 };
