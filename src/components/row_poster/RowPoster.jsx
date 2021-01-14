@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './RowPoster.module.css';
 
-const RowPoster = ({ video }) => {
+const RowPoster = ({ video, handleClick }) => {
   return (
     <li className={styles.video}>
-      <figure className={styles.thumbWrap}>
+      <figure onClick={() => handleClick(video)} className={styles.thumbWrap}>
         <img
           className={styles.thumbnail}
           src={video.snippet.thumbnails.standard.url}
